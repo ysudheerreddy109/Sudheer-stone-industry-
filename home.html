@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudheer Stone Industry</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+                background-image: url(../hjjj.jpg);
+            
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            animation: titleGlow 2s infinite alternate;
+        }
+
+        
+        #home h2 {
+            font-size: 2em;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeInBounce 2s ease;
+        }
+        .wel{
+            font-size: 1em;
+            color:white;
+            text-align: center;
+        }
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            position: relative;
+        }
+        .caption {
+            color: #f2f2f2;
+            font-size: 1em;
+            text-align: center;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        }
+
+        /* Fade transition */
+        .fade {
+            animation: fade 1s ease-in-out;
+        }
+
+        @keyframes fade {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+        .social-media h2{
+            background-color: #444;
+        }
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            color: white;
+        }
+
+        .social-media ul li a {
+            color: ;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .social-media ul li a:hover {
+            text-shadow: 0px 0px 5px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sudheer Stone industry</h1>
+        </div>
+        <div class="logo">
+            <div id="logo">
+                <img src="logo.png" width="90px" height="90px" >
+            </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="categories.html">Our Categories</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section id="home">
+            <!-- Animated Welcome Message -->
+            <h2 class="wel">Welcome to Sudheer Stone Industry</h2>
+            <p class="wel">Your one-stop solution for quality stones.</p>
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="tandur grey stone.webp" style="height:300px; width:100%;">
+                    <div class="caption">tandur grey stone</div>
+                </div>
+                <div class="slide fade">
+                    <img src="tandur gray tumble.webp" style="height:300px; width:100%;">
+                    <div class="caption">tandur gray tumble</div>
+                </div>
+                <div class="slide fade">
+                    <img src="tandur grey natural.webp" style="height:300px; width:100%;">
+                    <div class="caption">tandur grey natural</div>
+                </div>
+                <!-- Additional images -->
+                <div class="slide fade">
+                    <img src="tandur yellow stones.webp" style="height:300px; width:100%;">
+                    <div class="caption">tandur yellow stones</div>
+                </div>
+            </div>
+            
+            <p id="pg" style="color: white;text-align: justify; font-size:medium; font-family:Verdana, Geneva, Tahoma, sans-serif">
+                Welcome to Sudheer Stone industry , 
+                <br> premier limestone quarry owner and manufacturer, and Telangana’s leading limestone exporter. Specializing in outdoor applications, we offer high-quality limestone that is perfect for garden areas, patios, and outdoor flooring. Our stones are renowned for their durability, natural beauty, and versatility, making them ideal for transforming outdoor spaces into stunning retreats. At sudheer stone industry, we are committed to superior customer service and ensuring your complete satisfaction with every purchase. Discover our range of limestone products and enhance your outdoor areas with the timeless elegance and strength of Sudheer Stone industry.
+            </p>
+        </section>
+    </main>
+    <div class="social-media">  
+        <h2 style="color: white;text-align:center">Connect with Us</h2>  
+        <p style="color: white;text-align:center">Follow us on social media:</p>  
+        <ul>  
+            <li><a href="https://www.facebook.com/businessname" target="_blank">Facebook</a></li>  
+            <li><a href="https://twitter.com/businessname" target="_blank">Twitter</a></li>  
+            <li><a href="https://www.linkedin.com/company/businessname" target="_blank">LinkedIn</a></li>  
+            <li><a href="https://www.instagram.com/businessname" target="_blank">Instagram</a></li>  
+        </ul>  
+    </div>  
+</div>  
+</main>
+
+<footer>
+<p style="color: white;">&copy; 2024 Sudheer Stone Industry. All rights reserved.</p>
+</footer>
+
+    <!-- JavaScript for slideshow -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll(".slide");
+            slides.forEach(slide => slide.style.display = "none");
+
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
